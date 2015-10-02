@@ -1,0 +1,220 @@
+main {
+	padding-top:30px;	
+}
+
+/* HEADER 
+===================== */
+header .navbar 		{ 
+	border-radius:0;
+    background: #28AB60;
+    margin-bottom: 0px;
+}
+
+.navbar-inverse {
+	color: #F6F7F4;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #F6F7F4;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #F6F7F4;
+	border-right-width: 1px;
+    border-right-color: #393F3F;
+    border-right-style: solid;
+    margin-left: 58px;
+}
+
+.navbar-inverse .navbar-text {
+    color: #F6F7F4;
+}
+
+body {
+	color: #F6F7F4;
+	background: #393F3F;
+}
+
+table {
+	color: #F6F7F4;
+	background: #28AB60;
+}
+
+thead {
+	background: #28AB60;
+}
+
+
+/* NGANIMATE
+====================== */
+
+/* show and hide */
+.show-hide-message.ng-hide-remove {
+	-webkit-animation:zoomIn 0.3s both ease;
+	-moz-animation:zoomIn 0.3s both ease;
+	animation:zoomIn 0.3s both ease;
+}
+
+/* ANIMATIONS
+====================== */
+.spinner {
+	-webkit-animation:spin 1s infinite;
+	-moz-animation:spin 1s infinite;
+	animation:spin 1s infinite;
+}
+
+@keyframes spin {
+	from 	{ transform:rotate(0deg); }
+	to 	{ transform:rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+	from 	{ -webkit-transform:rotate(0deg); }
+	to 	{ -webkit-transform:rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+	from 	{ -moz-transform:rotate(0deg); }	
+	to 	{ -moz-transform:rotate(360deg); }
+}
+
+
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+	margin-top: 64px;
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #28AB60;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-top-width: 1px;
+    border-top-color: #279b50;
+    border-top-style: outset;
+    margin-top: 1px;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    background: #393F3F;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #F6F7F4;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #F6F7F4;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+    border-bottom-width: 1px;
+    border-bottom-color: #279b50;
+    border-bottom-style: solid;
+}
+
+.sidebar-nav > .sidebar-brand a {
+	font-weight: bold;
+    color: #F6F7F4;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+    text-shadow: -1px 1px 75px #ffc, 1px -1px 150px #fff;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+    .navbar-right {
+    margin-right: 0px;
+	}
+}
